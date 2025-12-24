@@ -10,7 +10,7 @@ export function CreateProposal() {
   const { address } = useAccount();
   const { setCurrentView, setLoading, addProposal } = useStore();
   const [title, setTitle] = useState("");
-  const [duration, setDuration] = useState(DURATIONS[0].value);
+  const [duration, setDuration] = useState<number>(DURATIONS[0].value);
   const hasHandledSuccess = useRef(false);
 
   const { writeContract, data: hash, isPending } = useWriteContract();
