@@ -1,0 +1,7 @@
+pad
+ui.xml
+.env
+.env.local
+node_modules/
+.next/
+dist/
